@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>detail</title>
+    <link rel="stylesheet" href="{% static 'css/r1.css' %}">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>   
+  Download pdf file using <a> tag download attribute  
+</title> 
+<style>
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  </style>
+  </head>
+  <body class="w3-light-grey">
+    <div class="container">
+     <div class="w3-content w3-margin-top" style="max-width:1400px;">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-container">
+     <h2>{{name}}</h2>
+     <hr>
+     <p>Location: {{location}}</p>
+     <p> Email: {{email}} </p>
+     <p>Phone: {{phone}}</p>
+     <hr>
+     <h2>Skills</h2>
+     <p>{{skill1}}</p>
+     <p>{{skill2}}</p>
+     <p>{{skill3}}</p>
+     <hr>
+     <h2>Languages</h2>
+     <hr>
+     <p>{{language1}}</p>
+     <p>{{language2}}</p> 
+     <p>{{language3}}</p>
+     </div>
+     </div>
+     </div>
+     <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+     <hr>
+     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+     <hr>
+     <div class="w3-container">
+     <p class="w3-opacity"> {{title1}}</p>
+     <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>From {{dateofjoining1}} to {{dateofEnding1}}</p>
+     <p> {{shortnote1}}</p>
+     </div>
+     <div class="w3-container">
+     <p class="w3-opacity"> {{title2}}</p>
+     <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>From {{dateofjoining2}} to {{dateofEnding2}}</p>
+     <p> {{shortnote2}}</p>
+     </div>
+     <div class="w3-container">
+     <p class="w3-opacity"> {{title3}}</p>
+     <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>From {{dateofjoining3}} to {{dateofEnding3}}</p>
+     <p> {{shortnote3}}</p>
+     </div>
+     </div>
+
+
+
+     <div class="w3-container w3-card w3-white">
+     <hr>
+     <h2 class="w3-text-grey w3-padding-16">Education</h2>
+     <hr>
+     <div class="w3-container">
+     <p class="w3-opacity"> {{high}}</p>
+     <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>From {{dateofjoining4}} to {{dateofEnding4}}</p>
+     <p> {{interest1}}</p>
+     </div>
+     <div class="w3-container">
+     <p class="w3-opacity"> {{puc}}</p>
+     <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> From {{dateofjoining5}} to {{dateofEnding5}}</p>
+     <p> {{interest2}}</p>
+     </div>
+     <div class="w3-container">
+     <p class="w3-opacity"> {{degree}}</p>
+     <p class="w3-opacity">{{course}}</p>
+     <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>From {{dateofjoining6}} to {{dateofEnding6}}</p>
+     <p> {{interest3}}</p>
+     <h2>A Short Description about myself</h2>
+     <p>{{shortBio}}</p>
+
+     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <center>  
+   
+      <a href = "resume.pdf" download = "file">  
+       <b> download </b>  
+      </a>  
+        
+      </center>
+  </body>
+</html>

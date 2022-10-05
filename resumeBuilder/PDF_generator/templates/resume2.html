@@ -1,0 +1,160 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="{%static 'css/Resume.css'" type="text/css" >
+    <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <title>Templete</title>
+</head>
+
+<body>
+    
+    <div class="container">
+       
+        <div class="left_side">
+   <div class="profileText">
+ <div class="imgBx">
+    <img src="images.jpg" alt="Profile" title="Profile Photo">
+ </div>
+ <h2>{{first_name}} {{last_name}}<br><span>{{role}}</span></h2>
+   </div>
+
+
+   <!-- Personal Details -->
+   <div class="p_content">
+    <h3>Personal Details</h3><hr>
+        
+    <h5><i class="fa fa-envelope"></i> Email: {{email}} <br><br>
+        <i class="fa fa-phone"></i>Phone: {{mobile}}<br><br>
+        <i class="fa fa-male "></i>Location: {{address}}<br><br>
+        <!-- <i class='far fa-calendar-alt'></i>17/12/2001 -->
+    
+    </h5>
+    
+   </div>
+
+
+   <!-- Personal Skills -->
+   <div class="p_content">
+   <h3>Skills</h3><hr>
+   <ul>
+    
+    <li>{{skills}}</li>
+    
+    
+    
+   </ul>
+
+   </div>
+
+
+   <!-- Programming Skills -->
+
+
+
+<!-- Languages Known  -->
+<div class="p_content">
+    <h3>Languages Known</h3><hr>
+    <ul>
+        <li>English</li>
+        <li>Kannada</li>
+        <li>Hindi</li>
+    </ul>
+</div>
+   
+
+
+
+<!-- End of the left side  -->
+</div>
+
+
+<!-- Start of Right side -->
+        <div class="right_side">
+
+            <!-- Name and Content -->
+            <div class="r_content">
+        <h1>{{name}}</h1>  
+        <p></p>  
+        </div>
+        
+        <!-- Education  -->
+        <div class="right_content">
+            <h2>Education</h2><hr>
+            <ul>
+                <li><span>{{degree}} </span> {{varsity_name}}  <span></span></li>
+                <li><span> </span> <span> </span></li>
+                <li><span></span><span> </span></li>
+            </ul>
+            
+        </div>
+
+
+        <!-- Project Section -->
+        <div class="right_content">
+            <h2>Project </h2><hr>
+            <ul>
+                <li><h3><span></h3></span><br>
+                    <p></p>
+                </li>
+                <li><h3><span>Project 2 : </h3></span><br>
+                    <p>Description:</p></li>
+                <li><h3><span>Project 3: </h3></span><br>
+                    <p>Description:</p></li>
+            </ul>
+        </div>
+
+        
+        <!-- Experience -->
+      <div class="right_content">
+        <h2>Experience</h2><hr>
+        <h3><span>Comapny Name : </span></h3>
+        <p>Description: </p>
+      </div>
+
+
+      <!-- Certification  -->
+      <div class="right_content">
+       <h2>Certification </h2><hr>
+       <ol>
+        <li>Frontend Certification.</li>
+        <li>C Certification. </li>
+        <li>Java Certification.</li>
+        <li>Python Certification.</li>
+       </ol>
+
+      </div>
+
+
+      <div class="right_content">
+        <h2>Decleration</h2><hr>
+        <p>This is to declare that the above information is true to the best of my
+            knowledge.
+            </p>
+      </div>
+
+
+        <!-- Color change section -->
+    <!-- <div class="c_section">
+        <button type="button" class="btn btn-dark">Dark</button>
+    </div> -->
+
+        </div>
+        <!-- End of Right Section  -->
+    </div>
+    <!-- End of the Resume page -->
+
+
+ 
+
+
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

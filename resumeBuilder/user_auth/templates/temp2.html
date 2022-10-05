@@ -1,0 +1,206 @@
+{%load static%}
+<html>
+
+<head>
+	<title>Template-Online Resume Creativity</title>
+<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css'%}">
+	<!-- <link rel="stylesheet" type="text/css" href="css/scroll.css"> -->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/column_scroll.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/theme.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/thin_scroll.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<meta name="description" content="Online document editor like interface to create and save Resume">
+	<meta name="keywords" content="resume,cv,maker,creator,generator,iit,guwahati,iitg">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+    
+    
+            <div class="col-sm-3 no-print" id="top">
+    
+                <div id="panel">
+                    <h2>
+                        Online Resume Creator<h2>
+                    
+                    <hr>
+                    
+                    <button class="btn btn-block btn-success" onclick="window.print()">PRINT AS PDF</button>
+                    <a class="btn btn-block btn-success" href="{%url 'home'%}">HOME</a>
+                    <hr>
+                </div>
+    
+            </div>
+            <div class="col-sm-9 text-center" id="right"style="float:left">
+
+                <div id="page" class="droid">
+                    
+                        <div class="profileText" style="background-color: rgb(207, 209, 160); width: 200%; ">
+                            
+                            <h2 contenteditable="true"style="float:left">Aadvi <br><span>Web Developer</span></h2>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="p_details" contenteditable="true">
+                                <ul>
+                                    <li style="float:left"><i class="fa fa-envelope" contenteditable="true" style="float:left"></i> aadvi@gmail.com</li>
+                                    <br>
+                                    <li style="float:left"><i class="fa fa-phone" contenteditable="true"style="float:left"></i>9234758492</li>
+                                    <br>
+                                    <li style="float:left"><i class="fa fa-location-arrow" contenteditable="true"style="float:left" ></i>Bangalore,Karnataka,India</li>
+                                <br>
+                                </ul>
+                            </div>            
+                        </div>
+                              <!-- End of the top section -->
+                    </div>
+                    
+                    <div class="below"style="float:left"> 
+                        <div class="b_left">
+                            <h2 contenteditable="true"style="float:left">Technical Skills</h2>
+                            <br>
+                            <hr>
+                            <ul  contenteditable="true">
+                                <li style="float:left">C</li>
+                                <br>
+                                <li style="float:left">C++</li>
+                                <br>
+                                <li style="float:left">Java</li>
+                                <br>
+                                <li style="float:left">Python</li>
+                                <br>
+                                <li style="float:left">JavaScript</li>
+                                <br>
+                                <li style="float:left">HTML</li><br>
+                                <li style="float:left">CSS</li><br>
+                                <li style="float:left">React</li>
+                               
+                            </ul>
+                    
+                    
+                            <h2 contenteditable="true" style="float:left">Other Skills</h2><br><hr>
+                            <ul contenteditable="true">
+                                <li style="float:left"> Leadership Quality</li><br>
+                                <li style="float:left">Creativity</li><br>
+                                <li style="float:left">Communication Skills</li><br>
+                                <li style="float:left">Team building quality</li><br>
+                                <li style="float:left">Event Organizing</li><br>
+                                <li style="float:left">Fast Learning</li>
+                               
+                               
+                            </ul>
+                    
+                            <h2 contenteditable="true" style="float:left">Projects</h2><br><hr>
+                            <ul contenteditable="true">
+                                <li style="float:left"> Project 1</li><br>
+                                <li style="float:left">Project 2</li><br>
+                                <li style="float:left">Project 3 </li><br>
+                                <li style="float:left"> Project 4</li>
+                                
+                               
+                               
+                            </ul>
+                    
+                        </div>
+                        
+                        <div class="b_right"style="float:left">
+                            <div class="edu">
+                            <h2 contenteditable="true" style="float:left">Education</h2><br><hr>
+                            <ul contenteditable="true">
+                                <li style="float:left"><span contenteditable="true" >B.E : </span> Electrical and Electronics Engineering from IIT Bombay  <span>CGPA of 8.23.</span></li><br>
+                                <li style="float:left"><span contenteditable="true">PUC : </span> Vikasa Independent PU College <span> 82.8%.</span></li><br>
+                                <li style="float:left"><span contenteditable="true" >SSLC : </span> Vasavi School <span> 93.6%.</span></li>
+                            </ul>
+                        </div>        
+                    
+                    
+                        <div class="b">
+                        <h2 contenteditable="true"  style="float:left">Certifications</h2><br>
+                        <hr>
+                            <ol contenteditable="true">
+                                <li style="float:left">Frontend Certification</li><br>
+                                <li style="float:left">Python Certification</li><br>
+                                <li style="float:left">Java Certification</li>
+                            </ol>
+                </div>
+             </div>
+        </div>
+                     
+                    
+                    
+    </div>
+<div class="modal fade" id="usageModal" tabindex='-1'>
+    <div class="modal-dialog">
+         <div class="modal-content">
+                    
+            <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h5><strong>Note : </strong>Use <strong>Google Chrome</strong>. Other browsers are unable to print properly and don't support some features.</h5>
+                                    <h4><strong>Editing content</strong></h4>
+                                    <ul>
+                                        <li>Edit the Resume content just like a normal document editor (cut,copy,undo etc).</li>
+                                        <li>Entire sections can be added, reordered, removed just by cut,copy,pasting method. (Use "show/hide sections" button to hide but retain content)</li>
+                                        <li>To remove a section/point/mentor/link etc, just delete it.</li>
+                                        <li>For styled/formatted text, select the text portion and press <kbd>Ctrl+b</kbd> for bold, <kbd>Ctrl+i</kbd> for italics, <kbd>Ctrl+u</kbd> for underlined text.</li>
+                                        <li>Use "Insert sub-list" button to insert sub-points in a point. (like as in achivements section)</li>
+                                        <li>Change indentation and bullet style of the list where your cursor is placed.</li>
+                                    </ul>
+                                    <h4><strong>Editing template</strong></h4>
+                                    <ul>
+                                        <li>Use the options in the left panel to modify the template/look.</li>
+                                        <li>In case you want to use a different template than the official IITG template, choose the corresponding button to see other setting options. (For on-campus purpose, you must use official IITG template)</li>
+                                    </ul>
+                                    <h4><strong>Saving</strong></h4>
+                                    <ul>
+                                        <li>Close any popup box (like this instructions popup	) if opened. Press <kbd>Ctrl+s</kbd></li>
+                                        <li>This will save the webpage (a .html file and a folder will be saved. Keep them together)</li>
+                                        <li>Open the .html file in browser from your PC.</li>
+                                        <li>This way, you can maintain multiple saved copies for each profile/template on your PC.</li>
+                                    </ul>
+                                    <h4><strong>Print as PDF</strong></h4>
+                                    <ul>
+                                        <li>Adjust margin in the Chrome's print dialog box. You may need it if a section is getting split between two pages. Print each page separately with different margins if needed.</li>
+                                        <li>If URLs or some stray text is being shown in print preview, disable the options "Include headers and footers","Include background graphics" etc in the print dialog box.</li>
+                                    </ul>
+            </div>
+                    
+        </div>
+    </div>
+</div>
+                    
+<div class="modal fade" id="sectionToggleModal" tabindex='-1'>
+     <div class="modal-dialog">
+             <div class="modal-content">
+                      <div class="modal-body">
+                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionEducation">Education</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionExperience">Experience</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionPublications">Publications</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionProjects">Projects</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionSkills">Technical Skills</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionResponsibility">Positions of Responsibility</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionAchievements">Achievements</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCourses">Key courses taken</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCurricular">Extra curriculars</label></div>
+                                 <div class="checkbox"><label><input type="checkbox" name="sectionToggle" value="sectionFooterMessage">References message</label></div>
+                        </div>
+             </div>
+     </div>
+</div>
+                    
+                    
+                    
+<script type="text/javascript" src="{%static 'css/jquery.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'css/bootstrap.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'css/main.js'%}"></script>
+
+</body>
+</html>
+    
